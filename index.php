@@ -31,6 +31,7 @@
         <!-- Javascript-->
         <script src="js/vendor.min.js"></script>
         <script src="js/scripts.js"></script>
+        <!--script src="js/calculator.js"><!-->
 
     </head>
 
