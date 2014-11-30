@@ -31,7 +31,9 @@
         <!-- Javascript-->
         <script src="js/vendor.min.js"></script>
         <script src="js/scripts.js"></script>
-        <!--script src="js/calculator.js"><!-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
+        <script ></script>
 
     </head>
 
@@ -45,6 +47,8 @@
         <!-- Pull in content -->
         <?php require('sections/header.php'); ?>
         <?php require('sections/main.php'); ?>
+        
+        <script type="text/javascript" src="js/calculator.js"></script>
 
         <!-- Js Breakpoints -->
         <div class="tablet"></div>
