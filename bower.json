@@ -21,7 +21,11 @@
     "skrollr": "~0.6.27",
     "FitText.js": "~1.2.0",
     "bigtext": "0.1.6",
+<<<<<<< HEAD
     "normalize.styl": "~3.0.0"
+=======
+    "jquery-validate": "~1.13.1"
+>>>>>>> 799750be285a64a02eddfe185798afc5c5d39021
   },
   "devDependencies": {}
 }
