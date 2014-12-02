@@ -1,15 +1,15 @@
 (function(){
 	var charities = [];
 	var jqXHR = $.getJSON('/impact/json/charities.json', function( data ) {
-    	charities = data.charities;
-
-    	$('#amount').val("100");
-    	var charity = getCharityById(charities, 'sci');
-    	updateCharity(charity);
-    	updateImpacts(charity, 100);
+		charities = data.charities;
+		
+		$('#amount').val("100");
+		var charity = getCharityById(charities, 'sci');
+		updateCharity(charity);
+		updateImpacts(charity, 100);
 	})
-  	.fail(function(data, textStatus, error) {
-       	console.error("Could not load charities.json, status: " + textStatus + ", error: " + error);
+	.fail(function(data, textStatus, error) {
+		console.error("Could not load charities.json, status: " + textStatus + ", error: " + error);
   	});
 
 
@@ -40,14 +40,14 @@
 			impacts = [{number: 0, action: charity.pricePoints[0].action, item: charity.pricePoints[0].item}];
 			n = 1;
 		}
-		for (var j=0; j<impacts.length; j++) {
+		for (var j=0; j<n; j++) {
 			var resultId = "#result"+String(j+1);
 			$(resultId+" div.number span").html(String(impacts[j].number).replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,"));
 			$(resultId+" div.thing span").html(impacts[j].action);
 			$(resultId+" p.info").html(impacts[j].item);
 			$(resultId).show();
 		}
-		for (var j=impacts.length; j<4; j++) {
+		for (var j=n; j<4; j++) {
 			var resultId = "#result"+String(j+1);
 			$(resultId).hide();
 		}
@@ -73,7 +73,7 @@
 	$('#amount').on("change input", function() {
 		var charId = $('input:radio[name=charity]:checked')[0].id;
 		var charity = getCharityById(charities, charId);
-		var donation = parseFloat($('#amount') .val()) || 0;
+		var donation = parseFloat($('#amount').val()) || 0;
 
 		updateImpacts(charity, donation);
 		$(document).trigger('contentChange');
@@ -84,7 +84,7 @@
 			e.preventDefault();
 			var charId = $('input:radio[name=charity]:checked')[0].id;
 			var charity = getCharityById(charities, charId);
-			var donation = parseFloat($('#amount') .val()) || 0;
+			var donation = parseFloat($('#amount').val()) || 0;
 			
 			updateImpacts(charity, donation);
 			$(document).trigger('contentChange');
