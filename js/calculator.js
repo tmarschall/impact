@@ -47,7 +47,7 @@
 			$(resultId+" p.info").html(impacts[j].item);
 			$(resultId).show();
 		}
-		for (var j=n; j<4; j++) {
+		for (var j=n; j<5; j++) {
 			var resultId = "#result"+String(j+1);
 			$(resultId).hide();
 		}
