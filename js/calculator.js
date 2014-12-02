@@ -4,9 +4,9 @@
     	charities = data.charities;
 
     	$('#amount').val("100");
-  		var charity = getCharityById(charities, 'sci');
-		updateCharity(charity);
-  		updateImpacts(charity, 100);
+    	var charity = getCharityById(charities, 'sci');
+    	updateCharity(charity);
+    	updateImpacts(charity, 100);
 	})
   	.fail(function(data, textStatus, error) {
        	console.error("Could not load charities.json, status: " + textStatus + ", error: " + error);
@@ -26,7 +26,7 @@
 		for (i = 0; i < charity.pricePoints.length; i++) {
 			pp = charity.pricePoints[i];
 			if (usableDonation >= pp.price) {
-				impacts.push({number: Math.floor(usableDonation/pp.price), action: pp.action, item: pp.item, exclusive: pp.exclusive});
+				impacts.push({number: Math.floor(usableDonation/pp.price), action: pp.action, item: pp.item});
 			}
 		}
 		return impacts;
@@ -34,6 +34,11 @@
 
 	var updateImpacts = function(charity, donation) {
 		var impacts = calculateImpacts(charity, donation);
+		var n = impacts.length;
+		if (n == 0) {
+			impacts = [{number: 0, action: charity.pricePoints[0].action, item: charity.pricePoints[0].item}];
+			n = 1;
+		}
 		for (var j=0; j<impacts.length; j++) {
 			var resultId = "#result"+String(j+1);
 			$(resultId+" div.number span").html(String(impacts[j].number).replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,"));
@@ -57,7 +62,7 @@
 
 	$('input:radio[name=charity]').change( function() {
 		var charity = getCharityById(charities, this.id);
-		var donation = parseInt($('#amount').val()) || 0;
+		var donation = parseFloat($('#amount').val()) || 0;
 
 		updateCharity(charity);
 		updateImpacts(charity, donation);
@@ -67,7 +72,7 @@
 	$('#amount').on("change input", function() {
 		var charId = $('input:radio[name=charity]:checked')[0].id;
 		var charity = getCharityById(charities, charId);
-		var donation = parseInt($('#amount') .val()) || 0;
+		var donation = parseFloat($('#amount') .val()) || 0;
 
 		updateImpacts(charity, donation);
 		$(document).trigger('contentChange');
@@ -79,7 +84,7 @@
 			e.preventDefault();
 			var charId = $('input:radio[name=charity]:checked')[0].id;
 			var charity = getCharityById(charities, charId);
-			var donation = parseInt($('#amount') .val()) || 0;
+			var donation = parseFloat($('#amount') .val()) || 0;
 
 			updateImpacts(charity, donation);
 			$(document).trigger('contentChange');
