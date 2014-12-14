@@ -11,7 +11,6 @@
           "item": "To protect aginast mosquitos for those living in malaria-stricken areas.",
           "iconURL": "/impact/img/result-icons/amf-net.png",
           "color": "green"
-
         },
         {
           "price": 1.67,
@@ -52,7 +51,7 @@
           "color": "red"
         },
         {
-          "price": 0.90,
+          "price": 0.9,
           "action": "Community Members",
           "item": "Provided with safe water for an entire year.",
           "iconURL": "/impact/img/result-icons/ea-water.png",
@@ -64,7 +63,6 @@
       "recommendation": "GiveWell, widely considered the most rigorous charity evaluator in the world, recommends only three top charities of which Deworm the World is one.  Similarly, the researchers at Giving What We Can rank Deworm the World as one of only four charities to earn their top recommendation based on their outstanding cost-effectiveness."
     },
     {
-      "index": 2,
       "id": "fistula-foundation",
       "name": "Fistula Foundation",
       "overhead": 0.153,
@@ -103,7 +101,6 @@
       "recommendation": "The Fistula Foundation has received numerous accolades, including receiving four out of four stars from Charity Navigator for eight years&mdash;something only 1% of charities rated by Charity Navigator have achieved.  The Fistula Foundation is also a Better Business Bureau accredited charity, meeting all twenty Standards for Charitable Accountability."
     },
     {
-      "index": 3,
       "id": "fred-hollows",
       "name": "Fred Hollows Foundation",
       "overhead": 0.245,
@@ -121,7 +118,6 @@
       "recommendation": "The World Bank has identified cataract surgery as one of the most cost-effective of all public health interventions.  Fred Hollows Foundation was named the 2013 Australian Charity of the Year and was recognized by The Global Journal as one of Top 100 NGOs in the world. In 2008, they received the Givewell Charity Award for &quot;Best Practice Not-for-Profit&quot; organization."
     },
     {
-      "index": 4,
       "id": "givedirectly",
       "name": "Give Directly",
       "overhead": 0.1,
@@ -146,7 +142,6 @@
       "recommendation": "GiveWell, widely considered the most rigorous charity evaluator in the world, recommends only three top charities of which GiveDirectly is one."
     },
     {
-      "index": 5,
       "id": "oxfam",
       "name": "Oxfam",
       "overhead": 0,
@@ -190,7 +185,7 @@
           "price": 1500,
           "action": "Schools Built",
           "item": "For girls in developing countries.",
-          "iconURL": "/impact/img/ox-school.png",
+          "iconURL": "/impact/img/result-icons/ox-school.png",
           "color": "green"
         }
       ],
@@ -199,7 +194,6 @@
       "recommendation": "After tackling global poverty for more than half a century, Oxfam has a wealth of experience to draw upon for present and future programs.  Oxfam International has had an extensive independent evaluation carried out of their first collaborative Strategic Plan (2001-2006). Oxfam GB has recently been leading the way to better self-evaluation within charities with its rigorous Project Effectiveness Reviews."
     },
     {
-      "index": 6,
       "id": "psi",
       "name": "Population Services International",
       "overhead": 0,
@@ -217,7 +211,6 @@
       "recommendation": "The American Institute of Philanthropy has named PSI a Top Rated Charity.  PSI is also a Guidestar Exchange Silver Participant."
     },
     {
-      "index": 7,
       "id": "possible",
       "name": "Possible",
       "overhead": 0,
@@ -233,9 +226,8 @@
       "organization": "Possible is a nonprofit healthcare company that delivers high-quality, low-cost healthcare to the world's poor. They are pioneering a new approach called &quot;durable healthcare&quot; that brings together the best of private, public, and philanthropic models. Possible works in rural Nepal through government hospitals, clinics, community health workers, and a referral network. This &quot;hub and spoke&quot; approach is the model most adept at providing equitable healthcare to the poor in places where such healthcare is hardest to find. Possible pursues long-term durability by employing and training local health care providers and non-clinical staff. Within Nepal, their staff is 98% Nepali. For more about Possible’s work, watch Chief Executive Officer Mark Arnoldy’s TEDx talk “Durable Healthcare—Redesigning a System to Work for Everyone.”",
       "numbers": "Since they started delivering healthcare in 2008, Possible has treated over 200,000 patients, attracted over $500,000 in cash and in-kind investment from Nepal’s government through public-private partnerships, and employed 170 local Nepali team members. Possible provides free patient care at a donor price point of $25, including all overhead and operational costs.  Possible measures its quality of care with a set of 6 key performance indicators: Surgery Access, Equity, Safe Birth, Follow Up, Outpatient Use, and Family Planning. Possible’s overhead is 10.4%, made up of 8.0% administrative and 2.4% fundraising costs, but Possible funds all costs for U.S. operations separately through special donors, so 100% of general donations go directly to Nepal.  All Quarterly Impact Reports have been developed as a transparent model for accountability and replication, acting as an open home for everything Possible does, including data on clinical outcomes, community health, finances, and all organizational operational protocols.",
       "recommendation": "Possible has received awards from Sappi Ideas That Matter and Best Hospital in Nepal. Possible CEO Mark Arnoldy was named one of Forbes’ 30 Under 30 Creating Global Change in 2014."
-      },
+    },
     {
-      "index": 8,
       "id": "phc",
       "name": "Project Healthy Children",
       "overhead": 0,
@@ -253,7 +245,6 @@
       "recommendation": "The researchers at Giving What We Can rank Project Healthy Children as one of only four charities to earn their top recommendation, based on their outstanding cost-effectiveness."
     },
     {
-      "index": 9,
       "id": "sci",
       "name": "Schistosomiasis Control Initiative",
       "overhead": 0,
@@ -271,7 +262,6 @@
       "recommendation": "Treating NTDs is a &quot;best buy&quot; in public health according to The World Health Organization (WHO).  GiveWell, widely considered the most rigorous charity evaluator in the world, recommends only three top charities of which SCI is one.  The researchers at Giving What We Can rank SCI as one of only four charities to earn their top recommendation, based on their outstanding cost-effectiveness."
     },
     {
-      "index": 10,
       "id": "seva",
       "name": "Seva Foundation",
       "overhead": 0,
@@ -317,7 +307,6 @@
       "recommendation": "The World Bank has identified cataract surgery as one of the most cost-effective of all public health interventions. In 2007, The Council on Foundations presented Seva with the prestigious Critical Impact Award for \"revolutionizing\" community-based eye care."
     },
     {
-      "index": 11,
       "id": "proven-impact",
       "name": "Innovations for Poverty Action",
       "overhead": 0,
