@@ -2,7 +2,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js""></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="http://knockoutjs.com/downloads/knockout-3.2.0.js"></script>
 	<script src="/impact/js/edit_charities.js"></script>
 
